@@ -13,54 +13,50 @@
       background-color: black;
     }
 
+    /* 輪播 */
     .carousel-item img {
       object-fit: cover;
     }
 
-    @media(min-width: 576px) {
 
-      #carousel.carousel {
-        height: 100%;
-      }
+    #carousel.carousel {
+      height: 100%;
+    }
 
-      #carousel .carousel-inner {
-        height: 100%;
-      }
+    #carousel .carousel-inner {
+      height: 100%;
+    }
 
-      #carousel .carousel-item {
-        height: 100%;
-      }
+    #carousel .carousel-item {
+      height: 100%;
+    }
 
-      #carousel .carousel-item img {
-        height: 100%;
-      }
+    #carousel .carousel-item img {
+      height: 100%;
+    }
+
+    /*  */
+    #myForm,
+    #myShop .col {
+      background-color: var(--bs-gray-200);
     }
 
     @media(min-width: 992px) {
-      #myCarousel {
-        height: 100vh;
-      }
 
-      #myCard {
-        height: 100vh;
-      }
-
-      #myShop .row {
-        width: 100vw;
-      }
-
+      #myCarousel,
+      #myCard,
       #myMap,
-      #myMap iframe {
-        width: 100vw;
+      #myMap iframe,
+      #myForm {
         height: 100vh;
       }
+
     }
   </style>
 </head>
 
 <body>
   <!-- ========== 導覽列 -->
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-opacity fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">泰山咖啡莊園</a>
@@ -100,9 +96,7 @@
     </div>
   </nav>
 
-
   <!-- ========== 輪播 -->
-
   <div id="myCarousel">
     <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
       <!-- 指示器 -->
@@ -183,44 +177,43 @@
     </div>
   </div>
 
-  <!-- ========== 圖文 -->
+  <!-- ========== coffee shop圖文 -->
   <div id="myShop">
-    <div class="row">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 p-0">
+          <img class="w-100" src="https://picsum.photos/1320/1080/?random=7">
+        </div>
 
-      <div class="col-lg-6 p-0">
-        <img class="w-100" src="https://picsum.photos/1320/1080/?random=7">
-      </div>
-
-      <div class="col-lg-6 text-center p-5 bg-light d-flex align-items-center">
-        <div class="info ">
-          <h1>Coffee Shop</h1>
-          <p>
-            一段時間讓我們世界盃特點適當，鏡頭夫人解決支撐預覽性質電信機構湖北輔助，電信當然能不能榮譽還不，有時候你有怎樣以為反覆實用導致整合只有，你想責任編輯計算哥哥建立一個月辦理通信不到統計說到一面反覆，只需障礙擁有你可以不代表想要藍色預防不見，網易吃飯也許，傢。
-          </p>
-          <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+        <div class="col col-lg-6 p-0 text-center d-flex align-items-center">
+          <div class="info p-5">
+            <h1>Coffee Shop</h1>
+            <p>
+              一段時間讓我們世界盃特點適當，鏡頭夫人解決支撐預覽性質電信機構湖北輔助，電信當然能不能榮譽還不，有時候你有怎樣以為反覆實用導致整合只有，你想責任編輯計算哥哥建立一個月辦理通信不到統計說到一面反覆，只需障礙擁有你可以不代表想要藍色預防不見，網易吃飯也許，傢。
+            </p>
+            <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+          </div>
         </div>
       </div>
 
-    </div>
+      <div class="row flex-lg-row-reverse">
 
-    <div class="row flex-lg-row-reverse">
-
-      <div class="col-lg-6 p-0">
-        <img class="w-100" src="https://picsum.photos/1320/1080/?random=8">
-      </div>
-
-      <div class="col-lg-6 text-center p-5 bg-light d-flex align-items-center">
-        <div class="info ">
-          <h1>Coffee Shop</h1>
-          <p>
-            一段時間讓我們世界盃特點適當，鏡頭夫人解決支撐預覽性質電信機構湖北輔助，電信當然能不能榮譽還不，有時候你有怎樣以為反覆實用導致整合只有，你想責任編輯計算哥哥建立一個月辦理通信不到統計說到一面反覆，只需障礙擁有你可以不代表想要藍色預防不見，網易吃飯也許，傢。
-          </p>
-          <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+        <div class="col-lg-6 p-0">
+          <img class="w-100" src="https://picsum.photos/1320/1080/?random=8">
         </div>
+
+        <div class="col col-lg-6 text-center d-flex align-items-center">
+          <div class="info p-5">
+            <h1>Coffee Shop</h1>
+            <p>
+              一段時間讓我們世界盃特點適當，鏡頭夫人解決支撐預覽性質電信機構湖北輔助，電信當然能不能榮譽還不，有時候你有怎樣以為反覆實用導致整合只有，你想責任編輯計算哥哥建立一個月辦理通信不到統計說到一面反覆，只需障礙擁有你可以不代表想要藍色預防不見，網易吃飯也許，傢。
+            </p>
+            <a href="#" class="btn btn-success">VIEW COLLECTION</a>
+          </div>
+        </div>
+
       </div>
-
     </div>
-
   </div>
 
   <!-- ========== 地圖 -->
@@ -232,7 +225,8 @@
   </div>
 
   <!-- ========== 聯絡我們 -->
-  <div id="myForm">
+  <div id="myForm" class="text-center p-5">
+    <h1>聯絡我們</h1>
 
   </div>
 
